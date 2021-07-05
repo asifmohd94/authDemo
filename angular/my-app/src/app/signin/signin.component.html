@@ -1,0 +1,8 @@
+<form #authForm="ngForm" (ngSubmit)="signinUser(authForm)">
+
+    <input type="text" ngModel name="username" placeholder="Enter Usernmae"><br><br>
+
+    <input type="password" ngModel name="password" placeholder="Enter Password"><br><br>
+    <button type="submit" (click)="(onSuccess())">Signin</button>
+
+</form>
